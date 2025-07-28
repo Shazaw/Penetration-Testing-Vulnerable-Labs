@@ -22,4 +22,3 @@
     select * from flag_table;
     ```
 
-***
