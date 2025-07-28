@@ -16,14 +16,26 @@ This machine is configured with multiple vulnerable services and privilege escal
 * **Direct RCE Exploits:** Using Metasploit to exploit a known vulnerability in `distcc`.
 * **Linux Privilege Escalation:** Identifying and exploiting both SUID misconfigurations and writable cron jobs to gain root access.
 
+## Repository Structure
+
+This lab directory contains the following components:
+
+* **`setup.sh`**: The main script to build the vulnerable machine.
+* **`/config`**: Contains the configuration files used by the setup script to create the vulnerable services.
+* **`/wordlists`**: Contains password lists relevant to the challenges on this machine.
+* **`/solutions`**: Contains example walkthroughs for some of the vulnerabilities, including:
+    * [Anonymous FTP](./solutions/ftp_anonymous.md)
+    * [Hydra Brute-Force](./solutions/hydra_bruteforce.md)
+    * [Privilege Escalation](./solutions/privilege_escalation.md)
+    * [Tomcat Manager Exploit](./solutions/tomcat_exploit.md)
+
 ## Setup Instructions
 
-To deploy this lab, create a new **Ubuntu 22.04 LTS** virtual machine or cloud Droplet. Then, transfer the `setup.sh` script from this directory to the machine and execute it as the root user.
+To deploy this lab, clone the entire repository to your local machine. Then, transfer the `legacy-vulnerable-lab` directory to a new **Ubuntu 22.04 LTS** virtual machine or cloud Droplet. Finally, execute the setup script as the root user.
 
-The script will automatically install and configure all the necessary services and vulnerabilities.
+The script will automatically install and configure all the necessary services and vulnerabilities using the files provided in this repository.
 
-Example of running the setup script on the target VM
-
+```bash
+# Example of running the setup script on the target VM
 chmod +x setup.sh
-
 ./setup.sh
