@@ -1,38 +1,40 @@
-OmahTI Academy - Penetration Testing Final Project Labs
 
-Welcome to the official repository for the OmahTI Academy Penetration Testing Final Project. This project contains three distinct, vulnerable-by-design lab environments (Easy, Medium, and Hard) created for educational purposes, as well as a legacy lab for individual demonstrations.
+# Penetration Testing Vulnerable Labs
 
-The labs are designed to be deployed in a cloud environment and cover the full pentesting lifecycle, from enumeration and exploitation to privilege escalation and post-exploitation.
-Lab Architecture
+Welcome to **Penetration Testing Vulnerable Labs**, a comprehensive collection of vulnerable lab environments designed for security professionals, students, and enthusiasts to practice their skills in a legal and controlled environment. This is a personal project by **mshazaw**, featuring a series of labs that were developed for and used in workshops at the **OmahTI Academy**.
 
-The environment consists of a single Attacker Jump Box and separate Victim Machines, all running on a private virtual network (VPC). Students start on the Attacker Jump Box and must compromise each of the victim machines.
-Labs
+## Project Overview
 
-Each lab is contained within its own directory and includes a detailed README.md file with the challenge description, learning objectives, and a full setup script.
+This repository contains a set of fictional, vulnerable-by-design applications and servers. The goal is to provide a hands-on learning experience for identifying and exploiting common vulnerabilities across different technology stacks and difficulty levels.
 
-    Legacy Lab
+Inspired by classic training environments like DVWA, this project provides a structured and realistic set of challenges for learning and practice.
 
-        Focus: A collection of classic, individual vulnerabilities perfect for demonstrating specific tools and techniques (FTP, MySQL, distcc, Tomcat, etc.).
+## The Labs
 
-        Difficulty: Demonstration / Beginner
-    Easy Lab
+This repository is organized into four distinct labs, each with its own unique set of challenges and learning objectives. Please see the `README.md` file inside each lab's directory for detailed setup instructions and challenge information.
 
-        Focus: A linear challenge covering network enumeration, SSH brute-forcing, and SUID privilege escalation.
+* ### [Legacy Lab](./legacy-vulnerable-lab/README.md)
+    An older, unsupported application representing the risks of outdated software and classic network service misconfigurations.
 
-        Difficulty: Beginner
-    Medium Lab
+* ### [Easy Lab](./easy-vulnerable-lab/README.md)
+    A straightforward challenge path with common vulnerabilities, perfect for beginners learning the fundamentals.
 
-        Focus: Web application vulnerabilities, including SQL injection and file upload bypasses, leading to a full system compromise.
+* ### [Medium Lab](./medium-vulnerable-lab/README.md)
+    A more challenging scenario involving a multi-step exploitation path through a web application.
 
-        Difficulty: Intermediate
-    Hard Lab
+* ### [Hard Lab](./hard-vulnerable-lab/README.md)
+    The most difficult lab, requiring advanced techniques to compromise a modern, multi-component web application.
 
-        Focus: A realistic social media application with advanced web vulnerabilities, multi-step enumeration, and privilege escalation chains.
+## 🛠️ General Setup and Installation
 
-        Difficulty: Advanced
+Each lab is self-contained within its own directory. Generally, you will need a standard web server environment (like LAMP/LEMP/XAMPP) with:
 
-Disclaimer
+* Apache/Nginx
+* PHP
+* MySQL/MariaDB
 
-This project and all associated virtual machines are for educational and research purposes only. The vulnerabilities contained within are intentional. Do not deploy these labs in a production environment or use them for any illegal activities.
+Please refer to the `README.md` file inside each lab's directory for specific setup scripts and configuration details.
 
-Created by OmahTI Academy
+## ⚠Disclaimer
+
+**This project is for educational and research purposes only.** The vulnerabilities included are intentional. Please do not deploy these labs on a live, production server or any public-facing network. The project author, mshazaw, is not responsible for any misuse or damage caused by this software.
