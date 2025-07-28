@@ -23,6 +23,8 @@ To deploy this lab, create a new **Ubuntu 22.04 LTS** virtual machine or cloud D
 The script will automatically install and configure all the necessary services and vulnerabilities.
 
 # Example of running the setup script on the target VM
+
 chmod +x setup.sh
+
 ./setup.sh
 
