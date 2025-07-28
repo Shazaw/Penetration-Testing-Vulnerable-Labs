@@ -35,6 +35,6 @@ Each lab is self-contained within its own directory. Generally, you will need a 
 
 Please refer to the `README.md` file inside each lab's directory for specific setup scripts and configuration details.
 
-## ⚠Disclaimer
+## Disclaimer
 
 **This project is for educational and research purposes only.** The vulnerabilities included are intentional. Please do not deploy these labs on a live, production server or any public-facing network. The project author, mshazaw, is not responsible for any misuse or damage caused by this software.
