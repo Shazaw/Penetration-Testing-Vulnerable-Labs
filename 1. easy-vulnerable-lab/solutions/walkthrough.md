@@ -20,8 +20,7 @@ This document outlines the intended solution path for the Easy Lab.
 
 ### 2. Initial Access & Flag 2
 
-* **Action:** While on the FTP server, download the other files: `flag2.txt`, `note.txt`, and `wordlist.txt`.
-* **Flag 2:** Reading `flag2.txt` reveals `OmahTIAcademy{anon_ftp_access}`.
+* **Action:** While on the FTP server, download the other files:`note.txt`, and `wordlist.txt`.
 * **Clues:** The `note.txt` file gives the username `easyuser`, and `wordlist.txt` provides a short list of passwords.
 * **Action:** Use Hydra to brute-force the SSH service with the discovered information.
     ```bash
@@ -32,6 +31,8 @@ This document outlines the intended solution path for the Easy Lab.
     ```bash
     ssh easyuser@<TARGET_IP>
     ```
+* **Action:** After the ssh into easyuser, we'll open the flag2.txt there and obtain the flag using the 'cat' command.
+* **Flag 2:** `OmahTIAcademy{Easy_ssh_flag}`
 
 ### 3. Privilege Escalation & Flag 3
 
