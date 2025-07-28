@@ -1,0 +1,5 @@
+body { font-family: sans-serif; background-color: #f0f2f5; display: flex; justify-content: center; align-items: center; height: 100vh; }
+.login-box, .profile-container { background-color: white; padding: 20px; border-radius: 8px; box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); }
+input[type=text], input[type=password] { width: 100%; padding: 12px 20px; margin: 8px 0; display: inline-block; border: 1px solid #ccc; box-sizing: border-box; }
+input[type=submit] { background-color: #1877f2; color: white; padding: 14px 20px; margin: 8px 0; border: none; cursor: pointer; width: 100%; }
+.flag { background-color: #e9f5ff; border-left: 6px solid #2196F3; padding: 10px; margin-top: 20px;}
