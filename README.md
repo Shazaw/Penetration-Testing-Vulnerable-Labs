@@ -16,7 +16,7 @@ This repository is organized into four distinct labs, each with its own unique s
 * ### [Legacy Lab](./legacy-vulnerable-lab/README.md)
     An older, unsupported application representing the risks of outdated software and classic network service misconfigurations.
 
-* ### [Easy Lab](./1.easy-vulnerable-lab/README.md)
+* ### [Easy Lab](./1 easy-vulnerable-lab/README.md)
     A straightforward challenge path with common vulnerabilities, perfect for beginners learning the fundamentals.
 
 * ### [Medium Lab](./2.medium-vulnerable-lab/README.md)
