@@ -18,6 +18,7 @@ This lab was developed by **mshazaw** and has been used in workshops at the **Om
 This lab directory contains the following components:
 
 * **`setup.sh`**: The main script to build the vulnerable machine.
+* **`/config`**: Contains the configuration files used by the setup script.
 * **`/wordlists`**: Contains password lists relevant to the challenges on this machine.
 * **`/solutions`**: Contains a detailed walkthrough for the intended solution path.
 * **`/cve-rating`**: Contains a CVSS-based risk analysis of the vulnerabilities in this lab.
