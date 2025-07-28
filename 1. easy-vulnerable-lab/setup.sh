@@ -29,13 +29,13 @@ echo "Configuring anonymous FTP from config file..."
 cp ./config/vsftpd.conf /etc/vsftpd.conf
 
 mkdir -p /var/ftp
-# Flag 1: Found via enumeration
-echo "OmahTIAcademy{enum_flag_from_ftp_file}" > /var/ftp/FLAG_ENUM.txt
-# Flag 2: Found after login
-echo "OmahTIAcademy{anon_ftp_access}" > /var/ftp/flag2.txt
+# Flag 1: Found after login
+echo "OmahTIAcademy{anon_ftp_access}" > /var/ftp/flag1.txt
 # Clues for the next step
 echo "The user account on this machine is 'easyuser'." > /var/ftp/note.txt
 cp ./wordlists/easy-passwords.txt /var/ftp/wordlist.txt
+# Flag 2: Found via ssh into easyuser
+echo "OmahTIAcademy{Easy_ssh_flag}" > /home/easyuser/flag2.txt
 # Set correct permissions
 chown ftp:nogroup /var/ftp/*
 chmod 644 /var/ftp/*
