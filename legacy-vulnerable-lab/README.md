@@ -25,4 +25,5 @@ The script will automatically install and configure all the necessary services a
 Example of running the setup script on the target VM
 
 chmod +x setup.sh
+
 ./setup.sh
