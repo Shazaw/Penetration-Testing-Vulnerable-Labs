@@ -24,18 +24,9 @@ useradd -m -s /bin/bash easyuser
 echo "easyuser:R3sistance" | chpasswd
 
 # --- Configure FTP ---
-echo "Configuring anonymous FTP and placing flags..."
-# Use a known-good, minimal configuration
-cat <<EOF > /etc/vsftpd.conf
-listen=YES
-listen_ipv6=NO
-anonymous_enable=YES
-local_enable=YES
-write_enable=NO
-anon_root=/var/ftp
-allow_writeable_chroot=YES
-pasv_enable=YES
-EOF
+echo "Configuring anonymous FTP from config file..."
+# Copy the config file from the repository
+cp ./config/vsftpd.conf /etc/vsftpd.conf
 
 mkdir -p /var/ftp
 # Flag 1: Found via enumeration
