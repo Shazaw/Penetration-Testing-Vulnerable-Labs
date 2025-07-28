@@ -16,13 +16,13 @@ This repository is organized into four distinct labs, each with its own unique s
 * ### [Legacy Lab](./legacy-vulnerable-lab/README.md)
     An older, unsupported application representing the risks of outdated software and classic network service misconfigurations.
 
-* ### [Easy Lab](./1.easy-vulnerable-lab/README.md)
+* ### [Easy Lab](./1.%20easy-vulnerable-lab/README.md)
     A straightforward challenge path with common vulnerabilities, perfect for beginners learning the fundamentals.
 
-* ### [Medium Lab](./2.medium-vulnerable-lab/README.md)
+* ### [Medium Lab](./2.%20medium-vulnerable-lab/README.md)
     A more challenging scenario involving a multi-step exploitation path through a web application.
 
-* ### [Hard Lab](./3.hard-vulnerable-lab/README.md)
+* ### [Hard Lab](./3.%20hard-vulnerable-lab/README.md)
     The most difficult lab, requiring advanced techniques to compromise a modern, multi-component web application.
 
 ## General Setup and Installation
