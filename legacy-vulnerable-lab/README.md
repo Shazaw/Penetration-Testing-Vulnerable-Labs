@@ -26,6 +26,8 @@ This lab directory contains the following components:
 * **`/solutions`**: Contains example walkthroughs for some of the vulnerabilities, including:
     * [Anonymous FTP](./solutions/ftp_anonymous.md)
     * [Hydra Brute-Force](./solutions/hydra_bruteforce.md)
+    * [MySQL Weak Password](./solutions/mysql_weak_password.md)
+    * [Distcc RCE](./solutions/distcc_rce.md)
     * [Privilege Escalation](./solutions/privilege_escalation.md)
     * [Tomcat Manager Exploit](./solutions/tomcat_exploit.md)
 
