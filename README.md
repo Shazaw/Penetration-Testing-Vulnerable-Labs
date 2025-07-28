@@ -25,7 +25,7 @@ This repository is organized into four distinct labs, each with its own unique s
 * ### [Hard Lab](./hard-vulnerable-lab/README.md)
     The most difficult lab, requiring advanced techniques to compromise a modern, multi-component web application.
 
-## 🛠️ General Setup and Installation
+## General Setup and Installation
 
 Each lab is self-contained within its own directory. Generally, you will need a standard web server environment (like LAMP/LEMP/XAMPP) with:
 
